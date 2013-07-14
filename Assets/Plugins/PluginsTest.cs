@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 public class PluginsTest : MonoBehaviour
 {
-#if UNITY_EDITO
+#if UNITY_EDITOR
 	private static void CallPlugins(string key)
 	{
 		GameObject.Find("ptest").SendMessage("PlistCallback", key) ;
